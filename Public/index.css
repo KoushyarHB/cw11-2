@@ -1,0 +1,55 @@
+.title {
+  font-size: 50px;
+  color: blue;
+}
+
+.app {
+  width: 414px;
+  height: 896px;
+  padding: 32px 29px;
+  background-color: black;
+  border-radius: 40px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header p {
+  color: white;
+}
+
+.cover {
+  display: flex;
+  justify-content: center;
+}
+
+.song {
+  color: white;
+  padding: 0 32px;
+  margin-top: -2.2rem;
+}
+
+.song-title {
+  font-size: 26px;
+}
+
+.singer {
+  font-size: 16px;
+}
+
+.seek-bar {
+  display: flex;
+  justify-content: center;
+}
+
+.slider {
+  width: 400px;
+}
+
+.song-timing {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=index.css.map */
