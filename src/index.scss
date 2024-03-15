@@ -3,9 +3,14 @@
     color: blue;
 }
 
-@mixin flex{
+@mixin flex-between{
     display: flex;
     justify-content: space-between;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
 }
 
 .app {
@@ -17,7 +22,7 @@
 }
 
 .header {
-    @include flex;
+    @include flex-between;
     p {
         color: white;
     }
@@ -30,7 +35,7 @@
 
 .song {
     color: white;
-    padding: 0 32px;
+    padding: 0 40px;
     margin-top: -2.2rem;
 }
 
@@ -40,11 +45,11 @@
 
 .singer {
     font-size: 16px;
+    opacity: 0.7;
 }
 
 .seek-bar {
-    display: flex;
-    justify-content: center;
+    @include flex-center;
 }
 
 .slider {
@@ -52,5 +57,50 @@
 }  
 
 .song-timing {
-    @include flex;
+    @include flex-between;
+    // padding: 0 40px;
 }
+
+
+.song-reactions {
+    @include flex-between;
+    padding: 0 40px;
+}
+
+.song-reactions {
+    margin-top: 30px;
+    margin-bottom: 30px; 
+}
+
+.next-track {
+    @include flex-center;
+}
+
+.next-track-wrapper {
+    width: 364px;
+    height: 100px;
+    border-radius: 30px;
+    background-color:rgba(18,18,18,255);
+    padding: 1rem;
+}
+
+.track {
+    @include flex-between;
+    color: white;
+    opacity: 70%;
+    margin-top: 8px;
+
+}
+
+.track:first-child {
+    line-height: 2;
+    opacity: 100%;
+}
+
+.play-control {
+    @include flex-between;
+    padding: 30px;
+    margin-top: 10px;
+}
+
+
